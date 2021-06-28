@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D Breakout Game - JavScript</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="start2" src="sounds/start2.webm" muted></audio>
+   <img src="img/pause.png"  id="pause">
+   
+    <div class="snowflakes" aria-hidden="true">
+        
+        <div class="snowflake">
+        ❅
+        </div>    
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+      </div>
+        
+   <div class="main">
+    <div class="sound">
+        <img src="img/sounddOn.png" alt="" id="sound">
+    </div>
+    <div id="gameover">
+        <img src="img/olafWon.png" alt="" id="youwon">
+        <img src="img/go1.png" alt="" id="youlose">
+        <div id="restart"><span id="hov">Play Again!</span> <br> Score: <span id="score"></span></div>
+    </div>
+    <canvas id="breakout" width="520" height="720"></canvas>
+
+   </div>
+    <!-- <script src="components.js"></script> -->
+    <script src="game.js"></script>
+</body>
+</html>
